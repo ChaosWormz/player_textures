@@ -17,7 +17,7 @@ local function applyskin(player)
 		end
 		player:set_properties({textures={string.format("player_%s.png",name)}})
 	end
-	player:set_properties({visual="mesh",visual_scale={x=1,y=1},mesh=mesh})
+	player:set_properties({visual="mesh",visual_size={x=1,y=1},mesh=mesh})
 end
 
 minetest.register_on_joinplayer(function(player)
